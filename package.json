@@ -1,0 +1,20 @@
+{
+  "name": "graves-storage",
+  "version": "1.0.0",
+  "description": "A WIP MySQL, Web application, that functions as an E-commerce site for Storage units on TwitchRP (A Gaming Community)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayPTucker/graves-storage.git"
+  },
+  "author": "Jay Paul Tucker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayPTucker/graves-storage/issues"
+  },
+  "homepage": "https://github.com/JayPTucker/graves-storage#readme"
+}
