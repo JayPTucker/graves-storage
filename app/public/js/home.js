@@ -19,11 +19,13 @@ $.get("/api/all", function(data) {
 
             if (data[i].unit_status == true){
                 console.log(data[i].unit_number + " is OPEN (true)")
-                row.append(`<div class="col-md-4"><button class="btn btn-open">OPEN</button></div>`)
+                row.append(`<div class="col-md-2"><button class="btn btn-open">OPEN</button></div>
+                <div class="col-md-2"><button class="btn btn-open-apply">APPLY</button></div>`)
 
                 // $("#storage-data").prepend(test)
             } else {
-                row.append(`<div class="col-md-4"><button class="btn btn-closed">CLOSED</button></div>`)
+                row.append(`<div class="col-md-2"><button class="btn btn-closed">CLOSED</button></div>
+                <div class="col-md-2"><button class="btn btn-closed-apply">APPLY</button></div>`)
 
                 // $("#storage-data").prepend(test)
             }
