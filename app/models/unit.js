@@ -9,7 +9,17 @@ var sequelize = require("../config/connection.js");
 
 // Creates a "Item" model that matches up with DB
 var Unit = sequelize.define("unit", {
-  item_number: Sequelize.INTEGER
+  unit_number: Sequelize.INTEGER,
+  unit_status:{
+    type: Sequelize.BOOLEAN,
+    allowNull: false,
+    defaultValue: false
+  },
+  unit_price: Sequelize.INTEGER,
+  unit_owner: Sequelize.STRING,
+  unit_owner_org: Sequelize.STRING,
+  unit_next_payment: Sequelize.STRING,
+  unit_last_payment: Sequelize.STRING
 });
 
 // Syncs with DB
